@@ -26,7 +26,7 @@
         <% if (loggedIn){ %>
           <span> Logged in as </span>
           <a class = "btn btn-outline-secondary"
-            href="<%=`/users/${surrentUser._id}` %>"
+            href="<%=`/users/${currentUser._id}` %>"
           ><%= currentUser.username%></a>
         <% } else { %>
           <a class = "btn btn-outline-secondary"
