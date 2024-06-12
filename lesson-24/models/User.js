@@ -78,6 +78,10 @@ const mongoose = require("mongoose"),
  */
 // 이메일 주소를 사용자 이름으로 사용
 
+userSchema.plugin(passportLocalMongoose, {
+  usernameField:"email"
+});
+
 /**
  * Listing 18.2 (p. 260)
  * 사용자 모델에 가상 속성 추가
